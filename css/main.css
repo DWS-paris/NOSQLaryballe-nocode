@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('../libs/potree/potree.css');
+@import url('../libs/jquery-ui/jquery-ui.min.css');
+@import url('../libs/perfect-scrollbar/css/perfect-scrollbar.css');
+@import url('../libs/openlayers3/ol.css');
+@import url('../libs/spectrum/spectrum.css');
+@import url('../libs/jstree/themes/mixed/style.css');
+
+/* 
+Reset
+*/
+    *{
+        box-sizing: border-box;
+    }
+
+    section#potree_render_area {
+        left: 0 !important;
+    }
+
+    div#potree_map {
+        z-index: 1000000;
+    }
+
+    li#tools img {
+        height: 25px !important;
+        width: 25px !important;
+    }
+
+    input#chkEDLEnabled {
+        width: auto;
+    }
+
+    #potree_sidebar_container a {
+        color: #131d21;
+    }
+
+    .jstree-default .jstree-node {
+        margin: 0;
+    }
+
+    #potree_sidebar_container {
+        position: absolute;
+        z-index: 100;
+        border-right: none;
+    }
+
+    #sidebar_root{
+        border-right: none;
+        background-color: rgba(255, 255, 255, .5);
+        padding: 1rem;
+    }
+
+    img#potree_map_toggle {
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        margin: 0;
+        float: none;
+        top: unset;
+    }
+
+    img.potree_menu_toggle {
+        display: none;
+    }
+
+    .accordion > h3 {
+        padding: .5rem;
+        box-shadow: none;
+        border: none;
+        margin: 0;
+        text-shadow: none;
+        font-weight: 100;
+    }
+
+    .accordion > h3:not(:last-of-type){
+        border-bottom: .05rem solid white;
+    }
+
+    .accordion > h3 + div {
+        background: white;
+        color: #162226;
+        padding: .5rem;
+        margin-bottom: 1rem;
+    }
+
+    .pv-menu-list {
+        margin: 0;
+    }
+
+    .pv-menu-list > * {
+        margin: 0;
+    }
+
+    .pv-menu-list > div {
+        padding: 1rem;
+    }
+
+    div#potree_description {
+        display: none;
+    }
+/**/
+
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1.8rem;
+    line-height: 1;
+    text-shadow: 0 0 0.3rem #0f181c;
+}
+
+h1 span {
+    font-family: sans-serif;
+    font-weight: 500;
+    /* text-transform: initial; */
+    color: #131f22;
+    text-shadow: 0 0 black;
+    font-size: .4em;
+    display: block;
+    margin-top: .5rem;
+    text-shadow: 0 0 0 transparent;
+    background: white;
+    padding: .8rem .5rem;
+    line-height: 0;
+}
+
+
+main{
+    position: absolute; 
+    width: 100%; 
+    height: 100%; 
+    left: 0px; 
+    top: 0px;
+}
+
+.pv-menu-list input{
+    width: 100%;
+    padding: .5rem;
+    border-radius: .2rem;
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin-bottom: .5rem;
+    background-color: #c7c9ca;
+}
+
+.pv-menu-list input[type="button"] {
+    color: white;
+    background-color: #e83100;
+}
+
+.pv-menu-list label {
+    margin: 0;
+    line-height: 2;
+}
