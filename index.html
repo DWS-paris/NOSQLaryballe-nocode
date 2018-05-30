@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <base href="/">
     <meta charset="utf-8">
-    <meta name="description" content="">
     <meta name="author" content="Damien Truffaut and Julien Noyer">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <title>Potree Viewer</title>
+    <meta name="description" content="PWA Tap Game">
+    <meta name="theme-color" content="#0f181c"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title>Aryballe Project Let's play with Lidar data &amp; NoSQL DDB</title>
+
+    <link rel="manifest" href="/manifest.json">
     <link rel="stylesheet" href="./css/main.css">
   </head>
 
   <body>
+    <noscript>
+      <h1>Aryballe Project <span>Let's play with Lidar data &amp; NoSQL DDB</span></h1>
+      <p>You need to run Javascript to use this application.</p>
+    </noscript>
+    
     <main>
       <section id="potree_render_area"></section>
       <aside id="potree_sidebar_container"> </aside>

@@ -7864,7 +7864,7 @@ void main() {
 
 
 			if(!window.warned125){
-				console.log("TODO");
+				// console.log("TODO");
 				window.warned125 = true;
 			}
 
@@ -23347,7 +23347,7 @@ ENDSEC
 
 	let lru = new LRU();
 
-	console.log('Potree ' + version.major + '.' + version.minor + version.suffix);
+	// console.log('Potree ' + version.major + '.' + version.minor + version.suffix);
 
 	let pointBudget = 1 * 1000 * 1000;
 	let framenumber = 0;

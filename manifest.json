@@ -1,0 +1,20 @@
+{
+  "short_name": "aryballe",
+  "name": "Aryballe Project",
+  "icons": [
+    {
+      "src": "/img/icon/icon_small.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/img/icon/icon_large.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/index.html",
+  "background_color": "#0f181c",
+  "display": "standalone",
+  "theme_color": "#0f181c"
+}

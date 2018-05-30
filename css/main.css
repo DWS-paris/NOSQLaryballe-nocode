@@ -44,10 +44,11 @@ Reset
         border-right: none;
     }
 
-    #sidebar_root{
+    #sidebar_root {
         border-right: none;
         background-color: rgba(255, 255, 255, .5);
         padding: 1rem;
+        height: 100vh;
     }
 
     img#potree_map_toggle {
@@ -153,4 +154,19 @@ main{
 .pv-menu-list label {
     margin: 0;
     line-height: 2;
+}
+
+.annotation-titlebar {
+    border-radius: unset;
+    border: unset;
+    border-top-left-radius: .7rem;
+    border-bottom-right-radius: .7rem;
+    padding: .3rem .3rem .3rem .7rem;
+    transition: all .3s;
+}
+
+span.annotation-label {
+    font-weight: 100;
+    font-size: .8rem;
+    margin-right: .5rem;
 }
