@@ -1,6 +1,5 @@
 // Wait for DOM content
-document.addEventListener('DOMContentLoaded', () => {
-  
+$(document).ready( () => {
   /*
    * Class CollectionClass 
    * Define all the methode needed to manipulate data
@@ -10,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
       fetched (cbk) {
         $.ajax({
           dataType: "json",
-          url: "points.json",
+          url: "./data/db.json",
           success: cbk,
           error: err => console.error(err)
         })
@@ -29,6 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let myCollection = new CollectionClass()
   //
 
+
+
   /*
    * Potree configuration
    * Define object and methods for Potree
@@ -40,14 +41,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Load Potree pointclouds
     Potree.loadPointCloud("../pointclouds/vol_total/cloud.js", "Sorvilier", e => {
+      // Add points on scene
       viewer.scene.addPointCloud(e.pointcloud);
       viewer.fitToScreen();
     });
 
     // Method to display an array of annotations
     const showAnnotations = (annotations) => {
-      console.log('Annotation array received: ', annotations)
-      // TODO: no remove annotation event fired within potree #bugFix
+      console.log('Annotation array received: ', annotations);
+
       let annotationsRoot = $("#jstree_scene").jstree().get_node("annotations");
       $("#jstree_scene").jstree().delete_node(annotationsRoot.children);
       viewer.scene.getAnnotations().removeAllChildren();
@@ -103,7 +105,6 @@ document.addEventListener('DOMContentLoaded', () => {
       });
       console.log('Event trigged: ', event);
     };
-
     
     // Method called when 'measurement_added' Potree event trigged
     const onItemAdded = (event) => {
@@ -129,6 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
       console.log('DOM "#menu_annotate" reseted');
     };
   // 
+
 
 
   /*
@@ -161,4 +163,4 @@ document.addEventListener('DOMContentLoaded', () => {
       console.log('User interface loaded: ', viewer)
     });
   //
-})
+});
