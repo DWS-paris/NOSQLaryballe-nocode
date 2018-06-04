@@ -14,12 +14,6 @@ Basé sur les données [Lidar](https://fr.wikipedia.org/wiki/Lidar), le Aryballe
 - La méthode de stockage doit être définie selon l'utilisation métier de information
 - Les startégies de redistribution doivent permettre d'optimiser l'access à l'infromation
 
-### Les informations à manipuler sont de nature diverce mais doivent interagir les unes avec les autres
-### Les modes de productions de l'information sont multiples et doivent être évolutives
-### Chaque type d'information doit avoir une structure spécifique défini par l'information elle-même
-### La méthode de stockage doit être définie selon l'utilisation métier de information
-### Les startégies de redistribution doivent permettre d'optimiser l'access à l'infromation
-
 ## Technologies
 - [Lidar Data](https://fr.wikipedia.org/wiki/Lidar)
 - [Potree](http://potree.org)
