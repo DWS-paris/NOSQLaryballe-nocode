@@ -57,3 +57,22 @@ Dans un répertoire compressé:
 - Un schema fonctionnel (image pdf format a3 paysage `docs/schema.pdf`)
 - Un `docker-compose.yml` (qu'on ai plus qu'à faire `docker-compose up`)
 - Le code source de l'application
+
+
+
+
+
+--- 
+
+__Information__
+
+- Gestion des points
+- Gestion des utilisateurs/pays
+- Informations privées/publiques
+- Synchronisation en direct (entre plus ou moins 50 utilisateurs)
+
+__Stockage__
+
+- Ou ?
+- Comment ?
+- pourquoi ?
